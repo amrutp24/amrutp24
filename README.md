@@ -29,7 +29,6 @@
 I'm a **Senior CloudOps/DevOps Engineer** specializing in large-scale Kubernetes orchestration, hybrid cloud architectures, and AI-driven cloud security. I build the infrastructure that keeps critical systems resilient, observable, and secure — and I research the next generation of adaptive security frameworks for multi-cloud environments.
 
 Currently focused on:
-- 🔐 **AI-driven adaptive security orchestration** for multi-cloud environments *(IEEE Transactions on Cloud Computing — under review)*
 - ☁️ **Platform Engineering** — building self-service internal developer platforms at scale
 - 🤖 **MLOps** — bridging infrastructure engineering with machine learning pipelines
 
