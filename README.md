@@ -1,120 +1,53 @@
-<div align="center">
-
-```
- █████╗ ███╗   ███╗██████╗ ██╗   ██╗████████╗
-██╔══██╗████╗ ████║██╔══██╗██║   ██║╚══██╔══╝
-███████║██╔████╔██║██████╔╝██║   ██║   ██║   
-██╔══██║██║╚██╔╝██║██╔══██╗██║   ██║   ██║   
-██║  ██║██║ ╚═╝ ██║██║  ██║╚██████╔╝   ██║   
-╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝    ╚═╝   
-```
-
 # Amrut Pagidipally
 
-**Senior CloudOps & DevOps Engineer · AWS Community Builder**
+Senior CloudOps & DevOps engineer · AWS Community Builder · Texas
 
-[![AWS Community Builder](https://img.shields.io/badge/AWS-Community%20Builder-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)](https://aws.amazon.com/developer/community/community-builders/)
-[![GCP Pro Architect](https://img.shields.io/badge/GCP-Professional%20Cloud%20Architect-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)](https://www.credly.com/users/amrut-pagidipally)
-[![CKA](https://img.shields.io/badge/CKA-Certified%20Kubernetes%20Admin-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://www.credly.com/users/amrut-pagidipally)
-[![Terraform](https://img.shields.io/badge/HashiCorp-Terraform%20Associate-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)](https://www.credly.com/users/amrut-pagidipally)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/amrut-pagidipally-bb4244180)
-[![Medium](https://img.shields.io/badge/Medium-Articles-000000?style=for-the-badge&logo=medium&logoColor=white)](https://amruteng.medium.com)
+I test what cloud vendors claim, then write down what I found.
 
-</div>
+AWS, GCP and Terraform for the day job. Outside of it I poke at new releases, break things in my own account, and publish the results — including the parts that didn't work. One of those write-ups got AWS to fix its own documentation eight days later. Lately it has been Lambda durable functions, Bedrock AgentCore, and Terraform providers for services that didn't have one.
 
----
+Site: [amrutp24.github.io](https://amrutp24.github.io)
 
-## 🧠 About Me
+### Selected writing
 
-I'm a **Senior CloudOps/DevOps Engineer** specializing in large-scale Kubernetes orchestration, hybrid cloud architectures, and AI-driven cloud security. I build the infrastructure that keeps critical systems resilient, observable, and secure — and I research the next generation of adaptive security frameworks for multi-cloud environments.
+- [I blogged about an AWS docs gap. Eight days later, AWS closed it.](https://amruteng.medium.com/i-blogged-about-an-aws-docs-gap-eight-days-later-aws-closed-it-f335d81d8a7e) — Medium, Aug 2026
+- [I wrote a linter for a bug that can't be unit tested](https://amruteng.medium.com/i-wrote-a-linter-for-a-bug-that-cant-be-unit-tested-e296245eb39d) — Medium, Sep 2026
+- [AWS says a production agent is now two API calls. I tested that.](https://builder.aws.com/content/3BnCQ3tNlxDCGakjdtowPexN1dJ/aws-says-a-production-agent-is-now-two-api-calls-i-tested-that) — AWS Builder Center, Jul 2026
+- [I put an embedding model in a Lambda container. A year later, here's what I got wrong.](https://amruteng.medium.com/i-put-an-embedding-model-in-a-lambda-container-a-year-later-heres-what-i-got-wrong-bcc1dc6995f4) — Medium, Aug 2026
 
-Currently focused on:
-- ☁️ **Platform Engineering** — building self-service internal developer platforms at scale
-- 🤖 **MLOps** — bridging infrastructure engineering with machine learning pipelines
+Everything else is on [Medium](https://amruteng.medium.com) and [AWS Builder Center](https://builder.aws.com/community/@apagidip).
 
+### On the Terraform Registry
 
----
+Providers
 
-## 🏗️ What I Work On
+- [fireworks](https://registry.terraform.io/providers/amrutp24/fireworks/latest) — GPU inference deployments, datasets and fine-tuning jobs on Fireworks AI. The only Fireworks provider on the registry.
+- [dataiku](https://registry.terraform.io/providers/amrutp24/dataiku/latest) — Projects, code environments, connections, users and groups inside a Dataiku DSS instance.
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                   INFRASTRUCTURE LAYER                  │
-│   Kubernetes · EKS · ECS · Helm · Karpenter            │
-├─────────────────────────────────────────────────────────┤
-│                      AWS SERVICES                       │
-│   VPC · IAM · API Gateway · S3 · RDS · Lambda          │
-├─────────────────────────────────────────────────────────┤
-│                    CI/CD & AUTOMATION                   │
-│   Jenkins · Harness · GitHub Actions · GitLab CI       │
-├─────────────────────────────────────────────────────────┤
-│                  INFRA AS CODE & SECURITY               │
-│   Terraform · CloudFormation · IRSA · OPA              │
-├─────────────────────────────────────────────────────────┤
-│                    OBSERVABILITY                        │
-│   Dynatrace · CloudWatch · Prometheus · Grafana        │
-└─────────────────────────────────────────────────────────┘
-```
+Modules
 
----
+- [durable-agent-pipeline](https://registry.terraform.io/modules/amrutp24/durable-agent-pipeline/aws/latest) (aws) — Human-in-the-loop AI agent pipeline on Lambda durable functions, including the two non-obvious IAM grants they need.
+- [pubsub-bq-pipeline](https://registry.terraform.io/modules/amrutp24/pubsub-bq-pipeline/google/latest) (google) — Pub/Sub → Cloud Run → BigQuery ingestion with OIDC push auth, dead-lettering and alerting.
+- [dss](https://registry.terraform.io/modules/amrutp24/dss/aws/latest) (aws · google · azurerm) — Run Dataiku DSS on EC2, Compute Engine or an Azure VM with the same interface. [dss-bootstrap](https://registry.terraform.io/modules/amrutp24/dss-bootstrap/null/latest) renders the shared install script.
 
-## 🎓 Credentials
+### Tools
+
+- [toil-radar](https://github.com/amrutp24/toil-radar) — Estimates how much time a team loses to toil from git history and GitHub Actions, and ranks what to automate first. `pip install toil-radar`
+- [replayguard](https://github.com/amrutp24/replayguard) — Determinism checker for Lambda durable functions: static analysis for Python, TypeScript, Java and Rust, plus a replay-divergence harness.
+- [scp-preflight](https://github.com/amrutp24/scp-preflight) — Test an AWS service control policy against your workloads before you attach it. Fails the PR if reality disagrees.
+
+### Credentials
 
 | | |
 |---|---|
-| ☁️ | **Google Cloud Professional Cloud Architect** *(exp. 2028)* |
-| ☸️ | **CKA: Certified Kubernetes Administrator** — Linux Foundation *(exp. 2028)* |
-| 📊 | **Prometheus Certified Associate (PCA)** — Linux Foundation *(exp. 2028)* |
-| 🏗️ | **HashiCorp Certified: Terraform Associate (004)** *(exp. 2028)* |
-| ☁️ | **Google Cloud Associate Cloud Engineer** *(exp. 2029)* |
-| 🔷 | **Microsoft Certified: Azure Fundamentals** |
+| AWS | Community Builder, since March 2026 |
+| Google Cloud | Professional Cloud Architect · Associate Cloud Engineer |
+| Linux Foundation | Certified Kubernetes Administrator · Prometheus Certified Associate |
+| HashiCorp | Terraform Associate |
+| Microsoft | Azure Fundamentals |
 
----
+Badges on [Credly](https://www.credly.com/users/amrut-pagidipally).
 
-## 🏅 Community & Recognition
+### Elsewhere
 
-- 🌟 **AWS Community Builder** — Selected member of the AWS Community Builders program (March 2026)
-- ✍️ **Technical Writer** — Cloud architecture, DevOps practices, and AI/ML infrastructure on [Medium](https://amruteng.medium.com)
-
----
-
-## 🚀 Featured Projects
-
-### [`TerraformAwsCloudDemo`](https://github.com/amrutp24/TerraformAwsCloudDemo)
-Infrastructure-as-code demos for AWS cloud architecture using Terraform — VPC, EKS, IAM, and more.
-
-### [`Modulr.AI`](https://github.com/amrutp24/Modulr.AI)
-Exploring modular AI systems and cloud-native ML infrastructure patterns.
-
-
-
----
-
-## 📊 Current Focus Areas
-
-```
-Cloud Security          ████████████████████  Research
-Platform Engineering    ██████████████████░░  Active
-MLOps / AI Infra        ████████████████░░░░  Growing  
-Open Source             ████████░░░░░░░░░░░░  Building
-```
-
----
-
-## 📬 Let's Connect
-
-I'm always open to discussing cloud architecture, AI security research, platform engineering, and MLOps.
-
-- 💼 [LinkedIn](https://linkedin.com/in/amrut-pagidipally-bb4244180)
-- ✍️ [Medium](https://amruteng.medium.com)
-- 📧 amrut.pagidipally@gmail.com
-
----
-
-<div align="center">
-
-*"Infrastructure is the canvas. Automation is the brush. Reliability is the art."*
-
-![Profile Views](https://komarev.com/ghpvc/?username=amrutp24&color=FF9900&style=for-the-badge)
-
-</div>
+[LinkedIn](https://www.linkedin.com/in/amrut-pagidipally-bb4244180/) · [Medium](https://amruteng.medium.com) · [AWS Builder Center](https://builder.aws.com/community/@apagidip) · amrut.pagidipally@gmail.com
