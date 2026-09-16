@@ -6,7 +6,7 @@ I test what cloud vendors claim, then write down what I found.
 
 AWS, GCP and Terraform for the day job. Outside of it I poke at new releases, break things in my own account, and publish the results — including the parts that didn't work. One of those write-ups got AWS to fix its own documentation eight days later. Lately it has been Lambda durable functions, Bedrock AgentCore, and Terraform providers for services that didn't have one.
 
-Site: [amrutp24.github.io/amrut.github.io](https://amrutp24.github.io/amrut.github.io/)
+Site: [amrutp24.github.io](https://amrutp24.github.io/)
 
 ### Selected writing
 
